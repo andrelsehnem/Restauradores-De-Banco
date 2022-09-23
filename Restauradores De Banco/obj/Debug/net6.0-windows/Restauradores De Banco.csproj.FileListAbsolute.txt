@@ -1,0 +1,18 @@
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\bin\Debug\net6.0-windows\Restauradores De Banco.exe
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\bin\Debug\net6.0-windows\Restauradores De Banco.deps.json
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\bin\Debug\net6.0-windows\Restauradores De Banco.runtimeconfig.json
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\bin\Debug\net6.0-windows\Restauradores De Banco.dll
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\bin\Debug\net6.0-windows\Restauradores De Banco.pdb
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores De Banco.csproj.AssemblyReference.cache
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores_De_Banco.Pgdmp.resources
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores_De_Banco.Principal.resources
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores De Banco.csproj.GenerateResource.cache
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores De Banco.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores De Banco.AssemblyInfoInputs.cache
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores De Banco.AssemblyInfo.cs
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores De Banco.csproj.CoreCompileInputs.cache
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores De Banco.dll
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\refint\Restauradores De Banco.dll
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores De Banco.pdb
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\Restauradores De Banco.genruntimeconfig.cache
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Debug\net6.0-windows\ref\Restauradores De Banco.dll
