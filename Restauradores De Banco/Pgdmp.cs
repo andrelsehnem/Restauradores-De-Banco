@@ -15,6 +15,15 @@ namespace Restauradores_De_Banco
         public Form f;
         public string comando, nomeBanco, caminhoArquivo, porta, usuario, senha;
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                caminhoArquivo = fileDialog.FileName;
+                txt_caminhoArquivo.Text = caminhoArquivo;
+            }
+        }
+
         public Pgdmp(Form f_)
         {
             InitializeComponent();
