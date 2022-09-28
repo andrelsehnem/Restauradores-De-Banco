@@ -29,11 +29,16 @@
         private void InitializeComponent()
         {
             this.bt_pgdmp = new System.Windows.Forms.Button();
+            this.bt_fbk_fdb = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // bt_pgdmp
             // 
-            this.bt_pgdmp.Location = new System.Drawing.Point(13, 12);
+            this.bt_pgdmp.Location = new System.Drawing.Point(6, 22);
             this.bt_pgdmp.Name = "bt_pgdmp";
             this.bt_pgdmp.Size = new System.Drawing.Size(123, 37);
             this.bt_pgdmp.TabIndex = 0;
@@ -41,14 +46,47 @@
             this.bt_pgdmp.UseVisualStyleBackColor = true;
             this.bt_pgdmp.Click += new System.EventHandler(this.bt_pgdmp_Click);
             // 
+            // bt_fbk_fdb
+            // 
+            this.bt_fbk_fdb.Location = new System.Drawing.Point(6, 22);
+            this.bt_fbk_fdb.Name = "bt_fbk_fdb";
+            this.bt_fbk_fdb.Size = new System.Drawing.Size(123, 37);
+            this.bt_fbk_fdb.TabIndex = 1;
+            this.bt_fbk_fdb.Text = ".fbk to .fdb";
+            this.bt_fbk_fdb.UseVisualStyleBackColor = true;
+            this.bt_fbk_fdb.Click += new System.EventHandler(this.bt_fbk_fdb_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.bt_fbk_fdb);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(769, 71);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Firebird";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.bt_pgdmp);
+            this.groupBox2.Location = new System.Drawing.Point(12, 98);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(769, 72);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "PostgreSQL";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bt_pgdmp);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Name = "Principal";
             this.Text = "Restaurador de Bancos";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -56,5 +94,8 @@
         #endregion
 
         private Button bt_pgdmp;
+        private Button bt_fbk_fdb;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
     }
 }
