@@ -213,6 +213,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_fbk_fdb";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FBK <=> FDB";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Pgdmp_FormClosed);
             this.Load += new System.EventHandler(this.Frm_fbk_fdb_Load);

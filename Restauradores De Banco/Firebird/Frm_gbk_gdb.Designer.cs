@@ -57,7 +57,7 @@
             this.group_driveFire.Size = new System.Drawing.Size(360, 45);
             this.group_driveFire.TabIndex = 19;
             this.group_driveFire.TabStop = false;
-            this.group_driveFire.Text = "Drive";
+            this.group_driveFire.Text = "Driver";
             // 
             // radio_4
             // 
@@ -209,6 +209,7 @@
             this.Controls.Add(this.txt_caminhoGBK);
             this.Controls.Add(this.rich_resultado);
             this.Name = "Frm_gbk_gdb";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GBK <=> GDB";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_gbk_gdb_FormClosed);
             this.group_driveFire.ResumeLayout(false);

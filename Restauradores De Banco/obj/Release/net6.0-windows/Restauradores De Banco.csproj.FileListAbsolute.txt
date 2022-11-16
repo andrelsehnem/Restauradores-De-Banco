@@ -218,3 +218,4 @@ D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Release\net6.0-
 D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Release\net6.0-windows\Restauradores De Banco.pdb
 D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Release\net6.0-windows\Restauradores De Banco.genruntimeconfig.cache
 D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Release\net6.0-windows\ref\Restauradores De Banco.dll
+D:\Projetos\C#\Restauradores De Banco\Restauradores De Banco\obj\Release\net6.0-windows\Restauradores_De_Banco.Firebird.Frm_gbk_gdb.resources
