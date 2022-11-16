@@ -1,3 +1,5 @@
+using Restauradores_De_Banco.Firebird;
+
 namespace Restauradores_De_Banco
 {
     public partial class Principal : Form
@@ -19,6 +21,13 @@ namespace Restauradores_De_Banco
         {
             Frm_fbk_fdb f = new(this);
             this.Visible = false ;
+            f.Show();
+        }
+
+        private void bt_gbk_gdb_Click(object sender, EventArgs e)
+        {
+            Frm_gbk_gdb f = new(this);
+            this.Visible = false;
             f.Show();
         }
     }

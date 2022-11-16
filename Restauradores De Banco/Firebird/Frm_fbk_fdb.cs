@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restauradores_De_Banco.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,17 +14,66 @@ namespace Restauradores_De_Banco
     public partial class Frm_fbk_fdb : Form
     {
         public Form f;
+        public Powershell power = new();
         public string comando, nomeBanco, caminhoArquivo, porta, usuario, senha;
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bt_buscarFBD_Click(object sender, EventArgs e)
         {
-            if(fileDialog.ShowDialog() == DialogResult.OK)
+            fileDialog.CheckFileExists = false;
+            fileDialog.Multiselect = false; 
+            fileDialog.Filter = "Arquivos FDB (*.fdb)|*.fdb";
+            if (fileDialog.ShowDialog() == DialogResult.OK)
             {
                 caminhoArquivo = fileDialog.FileName;
-                txt_caminhoArquivo.Text = caminhoArquivo;
+                txt_caminhoFDB.Text = caminhoArquivo;
             }
         }
 
+        private void bt_fbkToFdb_Click(object sender, EventArgs e)
+        {
+            if (radio_2.Checked)
+            {
+                comando = @"Fire2.0\gbak ";
+            }
+            else if (radio_25.Checked)
+            {
+                comando = @"Fire2.5\gbak ";
+            }
+            else if (radio_3.Checked)
+            {
+                comando = @"Fire3.0\gbak ";
+            }
+            else if (radio_4.Checked)
+            {
+                comando = @"Fire4.0\gbak ";
+            }
+
+            comando = comando + @" -c -user sysdba -password masterkey """ + txt_caminhoFBK.Text + @""" """ + txt_caminhoFDB.Text + @"""";
+            rich_resultado.Text = "Aguarde... \n \n" + comando + "\n \n";
+            
+            power.PowerShell(comando);
+
+            rich_resultado.Text = rich_resultado.Text + (File.Exists(txt_caminhoFDB.Text) ? "Processo executado com sucesso! \n \n" : "Erro \n \n");
+
+            rich_resultado.Text = rich_resultado.Text + power.mensagem;
+        }
+
+        private void Frm_fbk_fdb_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_buscarFBK_Click(object sender, EventArgs e)
+        {
+            fileDialog.CheckFileExists = false;
+            fileDialog.Multiselect = false;
+            fileDialog.Filter = "Arquivos FBK (*.fbk)|*.fbk";
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                caminhoArquivo = fileDialog.FileName;
+                txt_caminhoFBK.Text = caminhoArquivo;
+            }
+        }
         public Frm_fbk_fdb(Form f_)
         {
             InitializeComponent();
