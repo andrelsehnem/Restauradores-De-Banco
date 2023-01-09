@@ -7,7 +7,15 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <FileVersion>1.1.1.0</FileVersion>
+    <StartupObject>Restauradores_De_Banco.Program</StartupObject>
+    <ApplicationIcon>database_icon-icons.com_60689.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="database_icon-icons.com_60689.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Cake.Powershell" Version="2.0.0" />

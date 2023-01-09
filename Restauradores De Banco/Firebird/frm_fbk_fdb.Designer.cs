@@ -55,6 +55,7 @@
             this.txt_caminhoFBK.Size = new System.Drawing.Size(548, 23);
             this.txt_caminhoFBK.TabIndex = 0;
             this.txt_caminhoFBK.Text = "C:\\";
+            this.txt_caminhoFBK.Leave += new System.EventHandler(this.txt_caminhoFBK_Leave);
             // 
             // bt_buscarFBK
             // 
@@ -216,7 +217,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FBK <=> FDB";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Pgdmp_FormClosed);
-            this.Load += new System.EventHandler(this.Frm_fbk_fdb_Load);
             this.group_driveFire.ResumeLayout(false);
             this.group_driveFire.PerformLayout();
             this.ResumeLayout(false);

@@ -140,6 +140,7 @@
             this.txt_caminhoGDB.Size = new System.Drawing.Size(548, 23);
             this.txt_caminhoGDB.TabIndex = 14;
             this.txt_caminhoGDB.Text = "C:\\";
+            this.txt_caminhoGDB.Leave += new System.EventHandler(this.txt_caminhoGDB_Leave);
             // 
             // lbl_GDB
             // 
@@ -176,6 +177,7 @@
             this.txt_caminhoGBK.Size = new System.Drawing.Size(548, 23);
             this.txt_caminhoGBK.TabIndex = 10;
             this.txt_caminhoGBK.Text = "C:\\";
+            this.txt_caminhoGBK.Leave += new System.EventHandler(this.txt_caminhoGBK_Leave);
             // 
             // rich_resultado
             // 

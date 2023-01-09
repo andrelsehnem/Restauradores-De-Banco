@@ -22,6 +22,27 @@ namespace Restauradores_De_Banco.Firebird
         public Powershell power = new();
         public string comando, nomeBanco, caminhoArquivo, porta, usuario, senha;
 
+        private void txt_caminhoGDB_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txt_caminhoGBK_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txt_caminhoGBK.Text == @"C:\")
+                {
+                    txt_caminhoGDB.Text = @"C:\";
+                }
+                else txt_caminhoGDB.Text = txt_caminhoGBK.Text.Substring(0, txt_caminhoGBK.TextLength - 3) + "gdb";
+            }
+            catch (Exception ex)
+            {
+                txt_caminhoGDB.Text = @"C:\";
+            }
+        }
+
         private void Frm_gbk_gdb_FormClosed(object sender, FormClosedEventArgs e)
         {
             f.Visible = true;
@@ -43,6 +64,7 @@ namespace Restauradores_De_Banco.Firebird
                 caminhoArquivo = fileDialog.FileName;
                 txt_caminhoGBK.Text = caminhoArquivo;
             }
+            txt_caminhoGBK.Focus();
         }
 
         private void bt_buscarGDB_Click(object sender, EventArgs e)

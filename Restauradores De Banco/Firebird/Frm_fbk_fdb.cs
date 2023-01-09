@@ -29,6 +29,25 @@ namespace Restauradores_De_Banco
             }
         }
 
+        private void txt_caminhoFBK_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txt_caminhoFBK.Text == @"C:\")
+                {
+                    txt_caminhoFDB.Text = @"C:\";
+                }
+                else
+                {
+                    txt_caminhoFDB.Text = txt_caminhoFBK.Text.Substring(0, txt_caminhoFBK.TextLength - 3) + "fdb";
+                }
+            }
+            catch(Exception ex)
+            {
+                txt_caminhoFDB.Text = @"C:\";
+            }
+        }
+
         private void bt_fbkToFdb_Click(object sender, EventArgs e)
         {
             if (radio_2.Checked)
@@ -58,11 +77,6 @@ namespace Restauradores_De_Banco
             rich_resultado.Text = rich_resultado.Text + power.mensagem;
         }
 
-        private void Frm_fbk_fdb_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void bt_buscarFBK_Click(object sender, EventArgs e)
         {
             fileDialog.CheckFileExists = false;
@@ -73,6 +87,7 @@ namespace Restauradores_De_Banco
                 caminhoArquivo = fileDialog.FileName;
                 txt_caminhoFBK.Text = caminhoArquivo;
             }
+            txt_caminhoFBK.Focus();
         }
         public Frm_fbk_fdb(Form f_)
         {
